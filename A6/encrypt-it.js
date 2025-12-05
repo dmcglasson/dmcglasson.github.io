@@ -30,3 +30,7 @@
 function handleClick() {
   console.log("Button clicked!");
 }
+
+function handleReset() {
+  document.getElementById("input-text").value = "";
+}
