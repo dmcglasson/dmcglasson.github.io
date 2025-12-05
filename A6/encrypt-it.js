@@ -15,6 +15,7 @@
    * TODO: Write a function comment using JSDoc.
    */
   function init() {
+    console.log("Window loaded!");
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
   }
@@ -24,3 +25,8 @@
   // you shouldn't write an entire Java program in the main method).
 
 })();
+
+
+function handleClick() {
+  console.log("Button clicked!");
+}
