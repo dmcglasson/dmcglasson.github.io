@@ -14,6 +14,9 @@
   /**
    * TODO: Write a function comment using JSDoc.
    */
+  /**
+   * Initializes the application by setting up event handlers.
+   */
   function init() {
     console.log("Window loaded!");
     // Note: In this function, we usually want to set up our event handlers
@@ -26,7 +29,12 @@
 
 })();
 
-
+/**
+ * Shifts each letter in the input text by one position in the alphabet.
+ * Non-alphabetic characters are not changed.
+ * @param {string} text 
+ * @returns {string}
+ */
 function shiftCipher(text) {
   let result = "";
   text = text.toLowerCase();
@@ -42,6 +50,9 @@ function shiftCipher(text) {
   return result;
 }
 
+/**
+ * Resets the input text area to be empty.
+ */
 function handleReset() {
   document.getElementById("input-text").value = "";
 }
