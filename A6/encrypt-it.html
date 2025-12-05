@@ -26,7 +26,7 @@
           </select>
         </p>
 
-        <button id="encrypt-it" onclick="handleClick()">Encrypt It!</button>
+        <button id="encrypt-it" onclick="document.getElementById('result').textContent = shiftCipher(document.getElementById('input-text').value)">Encrypt It!</button>
         <button id="reset" onclick="handleReset()">Reset</button>
       </fieldset>
 

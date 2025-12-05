@@ -27,8 +27,19 @@
 })();
 
 
-function handleClick() {
-  console.log("Button clicked!");
+function shiftCipher(text) {
+  let result = "";
+  text = text.toLowerCase();
+  for (let i = 0; i < text.length; i++) {
+    let char = text[i];
+    if (char >= 'a' && char <= 'z') {
+      let shiftedCharCode = ((char.charCodeAt(0) - 97 + 1) % 26) + 97;
+      result += String.fromCharCode(shiftedCharCode);
+    } else {
+      result += char;
+    }
+  }
+  return result;
 }
 
 function handleReset() {
